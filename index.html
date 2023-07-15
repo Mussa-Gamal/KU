@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KU</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cf21a4a21.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/stretch-pro" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/noir" rel="stylesheet">
+    <body>
+    
+    <!------------ NAVBAR ------------>
+        
+    <nav id="targetDiv">
+        <div class="navbar">
+            <div class="logo"><a href="#"><span class="sticky-letters">Mu</span>ss<span class="sticky-letters">a-</span><span>ku</span></a></div>
+            
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            
+            <div class="btn">
+                <a href="#" class="btn"><button>Sign Up</button></a>
+            </div>
+
+            
+        </div>
+        <!-- Responsive navbar -->
+        <div class="toggle-btn" id="icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" width="25px" alt=""> 
+        </div>
+
+        <div class="dropdown-menu">
+            <a href="#"><div><li class="first">Home</li></div></a>
+            <a href="#"><div><li>Services</li></div></a>
+            <a href="#"><div><li>About us</li></div></a>
+            <a href="#"><div><li>Contact us</li></div></a>
+        </div>
+    </nav>
+
+    <script>
+        // Hamburger bars icon changes to cross icon on click
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+        // nav color changes to #cbc9c5 when hamburger bars is clicked
+        var icon = document.getElementById("icon");
+        var nav = document.getElementById("targetDiv");
+
+    
+        var isColorChanged = false;
+
+    
+        icon.addEventListener("click", function() {
+
+        if (isColorChanged) {
+            targetDiv.style.backgroundColor = "#e5ede8"; 
+        } else {
+            targetDiv.style.backgroundColor = "#cbc9c5"; 
+        }
+
+    
+        isColorChanged = !isColorChanged;
+        });
+    </script>
+    
+    <!------------ HEADING ------------>
+
+    <section class="heading">
+        <div class="head-title">
+            <h1>Creative <img src="megaphone.png" alt=""> Web Developers</h1>
+            <p>Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.</p>
+        </div>
+    </section>
+
+    <div class="robot-parent">
+        <div class="robot-image">
+            <img src="robot.png" alt="">
+        </div>
+    </div>
+    
+    <!------------ HERO 1 ------------>
+
+    <section class="parent-hero">
+        <div class="hero">
+            <div class="images">
+                <img src="person 1.png" alt="">
+            </div>
+    
+            <div class="details">
+                <h2>Turn your messy website into a professional one<span>!</span></h2>
+                <p>You have to be burning with an idea, or a problem, or a wrong that you want to right. If you're not passionate enough from the start, you'll never stick it out.</p>
+    
+                <div class="details-buttons">
+                    <a href="#"><button class="but-1"><span class="sticky-letters">Rea</span>dd <span class="sticky-letters">More</span></button></a>
+                    <a href="#"><button class="but-2">View Profile <i class="fa-solid fa-arrow-right icon"></i></button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ ANALYSIS HERO 1 ------------>
+
+    <section class="parent-ana">
+        <div class="analysis-hero-1">
+            <div class="analysis-1">
+                <p class="percent">+10%</p>
+                <h1>$20k</h1>
+                <p>This month <br> expenses</p>
+            </div>
+    
+            <div class="analysis-2">
+                <p class="percent">+41%</p>
+                <h1>$60k</h1>
+                <p>Last months <br> saved</p>
+            </div>
+    
+            <div class="analysis-3">
+                <div class="image">
+                    <img src="circle.png" alt="">
+                </div>
+    
+                <div class="details">
+                    <p>Average early <br> growth rate</p>
+                    <h1>17.9%</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ ANALYSIS HERO 2 ------------>
+
+    <section class="parent-ana-2">
+        <div class="analysis-hero-2">
+            <div class="analysis-2-box">
+                <div class="handshake-image">
+                    <img src="hands.png" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="statistics.png" alt="">
+                </div>
+    
+                <div class="details">
+                    <h2 class="title">Grow your company by investing in a website</h2>
+                    <p>If you really look closely, most overnight successes took a long time.</p>
+                    <ul>
+                        <div class="check-icon-parent">
+                            <div class="check-icon">
+                                <i class="fa-solid fa-check icon-1"></i>
+                                <img src="red ball.png" alt=""> 
+                            </div>
+                            <li>The supply chain crisis caused.</li>
+                        </div>
+                        
+                        <div class="check-icon-parent">
+                            <div class="check-icon">
+                                <i class="fa-solid fa-check icon-2"></i>
+                                <img src="red ball.png" alt=""> 
+                            </div>
+                            <li>Both global and local players.</li>
+                        </div>
+    
+                        <div class="check-icon-parent">
+                            <div class="check-icon">
+                                <i class="fa-solid fa-check icon-3"></i>
+                                <img src="red ball.png" alt=""> 
+                            </div>
+                            <li>To rethink logistics networks.</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------------ HERO 2 ------------>
+
+    <section class="parent-hero-2">
+        <div class="hero-2">
+            <div class="details">
+                <h1>Some of our supreme <img src="fire-icon.png" alt=""> websites!</h1>
+                <p>Almost everything worthwhile carries with it some sort of risk, whether it's starting a new business, whether it's leaving home, whether it's getting married, or whether it's flying into space.</p>
+                <a href="#"><button class="but-1"><span class="sticky-letters">Rea</span>dd <span class="sticky-letters">More</span></button></a>
+            </div>
+    
+            <div class="image">
+                <img src="black-webpage.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------------ UNDER HERO ------------>
+
+    <section class="parent-under-hero">
+        <div class="under-hero">
+            <div class="div-left">
+                <div class="image-1">
+                    <img src="Mask group.png" alt="">
+                </div>
+    
+                <p>Every problem is a gift—without problems we would not grow.</p>
+            </div>
+    
+            <div class="image-2">
+                <img src="person 2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!------------ HERO 3 ------------>
+
+    <section class="hero-3">
+        <div class="title">
+            <h1>Increase your money by investing in a Website <img src="red-lock.png" alt=""> Masterpiece.</h1>
+        </div>
+
+        <div class="expert-solutions">
+            <div class="three-images">
+                <img src="three people.png" alt="">
+            </div>
+
+            <p><a href="#">View Expert <br> Solutions</a></p>
+        </div>
+    </section>
+
+    <div class="purple-parent">
+        <div class="purple-image">
+            <img src="purple color.png" alt="">
+            <p>Play by the rules, but <br> be ferocious.</p>
+        </div>
+    </div>
+
+    <!------------ FOOTER ------------>
+
+    <footer> 
+        <div class="parent-contact-us">
+            <div class="contact-us">
+                <h2>Contact us now</h2>
+                <p>Success is not final; failure is not fatal: it is the courage to continue that counts. Success usually comes to those who are too busy to be looking for it.</p>
+                <form method="post">
+                    <input class="email" type="email" id="emailInput" placeholder="Click here!" onfocus="changePlaceholder('Enter your e-mail')" onblur="changePlaceholder('Click here!')">
+                    <div class="parent-submit">
+                        <button type="button">Contact</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="person-3-image">
+            <img src="person 3.png" alt="">
+        </div>
+
+        <div class="tea-image">
+            <img src="tea.png" alt="">
+        </div>
+
+        <div class="follow-us">
+            <h2>Follow us on</h2>
+
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-twitter con-1"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in con-2"></i></a>
+                <a href="#"><i class="fa-brands fa-github con-3"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram con-4"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Change placeholder value on click
+        function changePlaceholder(placeholderText) {
+        var input = document.getElementById('emailInput');
+        input.setAttribute('placeholder', placeholderText);
+        }
+    </script>
+</body>
+</html>
